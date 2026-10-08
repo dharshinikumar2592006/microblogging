@@ -1,0 +1,158 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Connectly</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+        <div>
+            <h1>💬 Connectly</h1>
+            <p>Share your world with people</p>
+        </div>
+    </header>
+
+
+    <!-- NAVIGATION -->
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#people">People</a>
+        <a href="#profile">Profile</a>
+    </nav>
+
+
+    <div class="container">
+
+
+        <!-- LEFT SIDE -->
+
+        <aside class="left">
+
+            <div class="card">
+
+                <h2>👤 Account</h2>
+
+                <select id="accountSelect"
+                        onchange="changeAccount()">
+
+                    <option value="Dharshini">
+                        Dharshini
+                    </option>
+
+                    <option value="Rahul">
+                        Rahul
+                    </option>
+
+                    <option value="Priya">
+                        Priya
+                    </option>
+
+                    <option value="Arun">
+                        Arun
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="card">
+
+                <h2>📊 My Profile</h2>
+
+                <div id="profile"></div>
+
+            </div>
+
+
+            <div class="card">
+
+                <h2>👥 My Connections</h2>
+
+                <h3>Followers</h3>
+
+                <div id="followers"></div>
+
+
+                <h3>Following</h3>
+
+                <div id="following"></div>
+
+            </div>
+
+        </aside>
+
+
+
+        <!-- CENTER -->
+
+        <main id="home">
+
+
+            <!-- CREATE POST -->
+
+            <div class="card create">
+
+                <h2>📝 Create Post</h2>
+
+                <textarea
+                    id="postContent"
+                    placeholder="What's happening?">
+                </textarea>
+
+                <button onclick="createPost()">
+                    Post
+                </button>
+
+            </div>
+
+
+            <!-- FEED -->
+
+            <div class="card">
+
+                <h2>🏠 Home Feed</h2>
+
+                <div id="posts"></div>
+
+            </div>
+
+        </main>
+
+
+
+        <!-- RIGHT SIDE -->
+
+        <aside class="right card" id="people">
+
+            <h2>🔎 Discover People</h2>
+
+            <div id="peopleList"></div>
+
+        </aside>
+
+    </div>
+
+
+    <footer>
+        <p>© 2026 Connectly</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+```
